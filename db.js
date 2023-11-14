@@ -1,5 +1,3 @@
-require("dotenv").config();
-
 const postgres = require("postgres");
 
 function conectar() {
