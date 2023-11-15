@@ -11,7 +11,7 @@ function conectar() {
 
 function leerTareas() {
   return new Promise(async (callback) => {
-    let conexion = conectar(); // aqui me conection a la bd llamando a la funcion conectar
+    let conexion = conectar(); // aqui me conection a la db llamando a la funcion conectar
 
     try {
       let tareas = await conexion`SELECT * FROM tareas`; // espero un array con la respuesta
