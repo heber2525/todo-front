@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const postgres = require("postgres");
 
 function conectar() {
@@ -26,6 +28,23 @@ function leerTareas() {
     }
   });
 }
+// function borrarTareas() {
+//   return new Promise(async (callback) => {
+//     let conexion = conectar(); // aqui me conection a la db llamando a la funcion conectar
+
+//     try {
+//       let tareas = await conexion`DELETE * FROM tareas`; // espero un array con la respuesta
+
+//       conexion.end();
+
+//       callback([null, tareas]);
+//     } catch (error) {
+//       console.log(error);
+//     } finally {
+//       conexion.end();
+//     }
+//   });
+// }
 
 // leerTareas().then((arrayResultado) => {
 //   console.log(arrayResultado);
