@@ -65,9 +65,9 @@ function crearTarea(textoTarea) {
     }
   });
 }
-crearTarea("hacer la compra").then((arrayResultado) => {
-  console.log(arrayResultado);
-});
+// crearTarea("hacer la compra").then((arrayResultado) => {
+//   console.log(arrayResultado);
+// });
 
 function editarTextoTarea(id, textoTarea) {
   return new Promise(async (callback) => {
@@ -84,9 +84,6 @@ function editarTextoTarea(id, textoTarea) {
     }
   });
 }
-// editarTextoTarea(1,"terminar express").then((arrayResultado) => {
-//   console.log(arrayResultado);
-// });
 
 function borrarTarea(id) {
   return new Promise(async (callback) => {
